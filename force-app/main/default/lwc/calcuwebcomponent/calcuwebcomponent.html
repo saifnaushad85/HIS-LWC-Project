@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small">
+                Calulater Examplee
+            </lightning-icon>
+            
+        </h3>
+        <div slot="footer">
+           <!-- <lightning-badge label={result}> old Result </lightning-badge> -->
+           <c-result-component result={result} ></c-result-component>
+           
+        </div>
+        <p class="slds-p-horizontal_small">
+            <lightning-input value={firstnumber} name="fnumber" label="First Number" onchange={handleOnChange} ></lightning-input>
+            <lightning-input value={SecondNumber} name="SNumber" label="Second  Number" onchange={handleOnChange} ></lightning-input>
+        </p>
+    </lightning-card>
+    
+</template>

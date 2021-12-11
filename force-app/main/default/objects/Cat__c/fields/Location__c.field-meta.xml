@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOOK BANK</fullName>
+                <default>false</default>
+                <label>BOOK BANK</label>
+            </value>
+            <value>
+                <fullName>PG LIBRARY</fullName>
+                <default>false</default>
+                <label>PG LIBRARY</label>
+            </value>
+            <value>
+                <fullName>UG LIBRARY</fullName>
+                <default>false</default>
+                <label>UG LIBRARY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

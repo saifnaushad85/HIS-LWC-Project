@@ -1,0 +1,22 @@
+<template>
+    <lightning-card>
+        <lightning-tile title="Record Edit Form"></lightning-tile>
+    <lightning-record-edit-form
+    object-api-name={objectApiName}   fields={fields} 
+    record-id="a0V2v00000af49jEAA" onsuccess={handleSuccess}  >
+    <lightning-input-field title="Name" value={PNAME}  field-name={PNAME} ></lightning-input-field>
+    <lightning-input-field  title="Phone No" value={PPhone} field-name={PPhone} ></lightning-input-field>
+    <lightning-input-field  title="Email" value={PEMAIL} field-name={PEMAIL} ></lightning-input-field>
+    <lightning-input-field  title="Gender" value={Gender} field-name={Gender} ></lightning-input-field>
+    
+        <lightning-button
+            variant="brand"
+            type="submit"
+            name="save"
+            label="Create Account"
+        >
+        </lightning-button>
+
+    </lightning-record-edit-form>
+</lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BackDateEntry</fullName>
+    <active>true</active>
+    <description>Back Date Entry Not Allowed</description>
+    <errorConditionFormula>DateofEntry__c &lt; Today()</errorConditionFormula>
+    <errorDisplayField>DateofEntry__c</errorDisplayField>
+    <errorMessage>Back Date Entry Not Allowed</errorMessage>
+</ValidationRule>

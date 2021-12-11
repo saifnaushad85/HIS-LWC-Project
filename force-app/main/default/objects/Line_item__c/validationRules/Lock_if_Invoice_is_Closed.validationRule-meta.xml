@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_if_Invoice_is_Closed</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF ( AND(ISNEW(),ISPICKVAL(InvStatement__r.Status__c, &apos;ClOSED&apos;)),true,false)</errorConditionFormula>
+    <errorMessage>New Item not allow once Invoice is closed</errorMessage>
+</ValidationRule>

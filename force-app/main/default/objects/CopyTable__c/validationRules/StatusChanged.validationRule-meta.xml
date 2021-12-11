@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusChanged</fullName>
+    <active>true</active>
+    <description>Status can not be change Issued to Shelf/Write-Off</description>
+    <errorConditionFormula>NOT(PRIORVALUE(Status__c) = &apos;Issued&apos;)  &amp;&amp; 
+
+
+ISPICKVAL(Status__c,&apos;Write-off&apos;)
+  ||  ISPICKVAL(Status__c,&apos;Shelf&apos;)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Status can not be change Issued to Shelf/Write-Off</errorMessage>
+</ValidationRule>

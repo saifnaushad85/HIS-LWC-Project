@@ -1,0 +1,21 @@
+<apex:page showHeader="false">
+ <apex:includeLightning/>
+    <div id="lwccontainer">  </div>
+
+        <script>
+            $Lightning.use("c:AppForVF1",function()
+                {
+                    $Lightning.createComponent("c:dataTablewithwire",{},"lwccontainer",
+                    function(cmp)
+                    {
+
+                    });
+                });
+
+            </script>
+
+   
+  
+
+
+</apex:page>

@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Combo with static value" icon-name="custom:cusotm67">
+        <p class="slds-p-horizontal_small">
+    <template if:true={options} >
+        <lightning-combobox
+            name="progress"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+    <p>Selected value is: {selectedValue}</p>
+    </template>
+</p>
+</lightning-card>
+
+
+<lightning-card title="Combo with Dynamic value" icon-name="custom:cusotm67">
+    <p class="slds-p-horizontal_small">
+<template if:true={typeValues.data} >
+    <lightning-combobox
+        name="AccountType"
+        label="Account Type"
+        value={selectedAccounType}
+        placeholder="Select Progress"
+        options={typeValues.data.values}
+        onchange={handleAccountTypeChange} ></lightning-combobox>
+
+<p>Selected value is: {selectedAccounType}</p>
+</template>
+</p>
+</lightning-card>
+
+<lightning-card title="Combo with Profile Combo New" icon-name="custom:cusotm67">
+    <p class="slds-p-horizontal_small">
+<template if:true={profileOptionsList} >
+    <lightning-combobox
+        name="Profile"
+        label="Profile"
+        value={selectedProfile}
+        placeholder="Select Profile"
+        options={profileOptionsList}
+        onchange={handleProfileChange} ></lightning-combobox>
+
+<p>Selected value is: {selectedProfile}</p>
+</template>
+</p>
+</lightning-card>
+
+</template>

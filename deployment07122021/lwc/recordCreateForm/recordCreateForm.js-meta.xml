@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record Creation</masterLabel>
+    <description>This is simple Record Form </description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="objectApiName" type="String" label="Object Api Name" description="To Hold object Api Name" role="inputOnly" />
+            <property name="fields" type="String" label="field List" description="To Hold fields" default="FirstName,LastName" role="inputOnly" />
+            <property name="title" type="String" label="Title" description="To Hold Title" role="inputOnly" />
+            <property name="message" type="String" label="Message" description="To Hold message" role="inputOnly" />
+            <property name="parentRecordId" type="String" label="parent Record Id" description="To Hold parent Record Id" role="inputOnly" />
+            <property name="parentFieldApiName" type="String" label="parent Field ApiName" description="To Hold parent Record Id" role="inputOnly" />
+            <property name="recordIdAfterSave" type="String" label="record Id After Save" description="To Hold recordId After Savee" role="outputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

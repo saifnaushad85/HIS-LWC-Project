@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoidaQueueGroup_Cat</fullName>
+    <filterScope>Queue</filterScope>
+    <label>NoidaQueueGroup</label>
+    <queue>NoidaQueueGroup</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

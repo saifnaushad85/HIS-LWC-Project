@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_ID__c</fullName>
+    <externalId>false</externalId>
+    <label>Book_ID</label>
+    <referenceTo>Books__c</referenceTo>
+    <relationshipLabel>Borrowed_Books</relationshipLabel>
+    <relationshipName>Borrowed_Books</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

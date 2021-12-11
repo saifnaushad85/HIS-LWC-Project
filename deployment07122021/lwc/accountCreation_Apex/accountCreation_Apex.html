@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  title="Hello">
+        <lightning-button label="Save" variant="brand" slot="actions" onclick={handleSaveAccount}></lightning-button>
+        
+        <div>
+            <p class="slds-p-horizontal_small">
+                <lightning-input type="text" label="Name"  value={accountRecord.Name} onchange={handleNameChange}></lightning-input>
+                <lightning-input type="text" label="Type"  value={accountRecord.Type} onchange={handleTypeChange}></lightning-input>
+                <lightning-input type="text" label="Phone"  value={accountRecord.Phone} onchange={handlePhoneChange}></lightning-input>
+
+            </p>
+        </div>
+        <p slot="footer">
+            <lightning-badge label={accountID}>Account ID</lightning-badge>
+            <lightning-badge label={error}></lightning-badge>
+          
+        </p>
+    </lightning-card>
+</template>
