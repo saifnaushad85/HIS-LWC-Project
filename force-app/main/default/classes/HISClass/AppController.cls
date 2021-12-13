@@ -7,7 +7,7 @@ public with sharing class AppController {
     {
         String  VarNew='Naushad Ali';
         List <Appointment__c> aplist =[select Name,P_Name__c,P_Phone__c,PaymentStatus__c,
-        Appointment_Date__c from Appointment__c limit 100];
+        Appointment_Date__c from Appointment__c limit 50];
         return aplist;
     }
     
