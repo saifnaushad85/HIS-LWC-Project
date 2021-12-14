@@ -1,0 +1,8 @@
+git init
+git is a version control-- tracl all the changes
+stage -- the files are ready to be committed
+ustaaged -- I still need to do some changes
+committ-- Finalizing the changes that I have doen
+    Pre-requisite for commit is to stage the changes
+
+first time --  moving a project to git-> Stage everything
